@@ -13,3 +13,4 @@ sudo yum install python3-pip
 git clone https://github.com/sshariqrizvi15/python-app-server.git
 sudo pip3 install -r python-app-server/requirements.txt
 nohup python3 /home/ec2-user/python-app-server/app/app.py > output.txt 2>&1  </dev/null &
+sudo service httpd start

@@ -3,6 +3,7 @@
 sudo yum -y install httpd
 cd /var/www/html
 echo "healthy" | sudo tee /var/www/html/healthy.html
+cd /home/ec2-user
 sudo wget https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
 sudo yum -y localinstall mysql57-community-release-el7-11.noarch.rpm
 sudo yum -y install mysql
